@@ -1,0 +1,105 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"], select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+li:nth-child(odd) {
+    background: #ececec;
+}
+
+li .task-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li .task-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li .task-actions button {
+    background: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+li .task-actions button.edit {
+    background: #337ab7;
+}
+
+li .task-actions button:hover {
+    background: #c9302c;
+}
+
+li .task-actions button.edit:hover {
+    background: #286090;
+}
